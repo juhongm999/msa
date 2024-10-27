@@ -1,0 +1,25 @@
+{
+    "configurations": {
+
+        "train": {
+            "adapter": "debugpy",
+            "configuration": {
+                "name": "train",
+                "type": "python",
+                "request": "launch",
+                "cwd": "~/workspace/msa/src/",
+                "python": "~/anaconda3/envs/msa/bin/python",
+                "stopOnEntry": true,
+                "console": "externalTerminal",
+                "debugOptions": [],
+                "program": "~/workspace/msa/src/main.py",
+                "env": {
+                    "CUDA_VISIBLE_DEVICES": "0"
+                },
+                "args": [
+                    "-c", "../configs/e01.yaml"
+                ]
+            }
+        }
+    }
+}

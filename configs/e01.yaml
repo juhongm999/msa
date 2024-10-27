@@ -31,7 +31,7 @@ n_saved_samples: 10
 
 # data params
 data_name: mnist
-data_dir: /s/chopin/l/grad/stock/nvme/data/cs/
+data_dir: ../../msa_data/
 ckpt_dir: ../ckpt
 plot_dir: ../plots
 standardize_x: False

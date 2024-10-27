@@ -1,5 +1,15 @@
 ## Memory-Based Sequential Attention
 
+#### Setup
+```
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+pip install pyyaml
+pip install pandas
+pip install tqdm
+```
+
+Also need to download the following: https://github.com/mnielsen/neural-networks-and-deep-learning/blob/master/data/mnist.pkl.gz
+
 #### Directories
 
 - `src` : contains all the python scripts for the project
