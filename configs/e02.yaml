@@ -1,0 +1,43 @@
+model_name: e02
+
+# network params
+g: 12
+k: 3
+s: 2
+h_g: 128
+h_l: 128
+n_hiddens: 256
+loc_std: 0.05
+
+# memory params
+h_m: 64
+use_memory: False
+
+# training params
+epochs: 150
+n_glimpses: 6
+lr: 0.001
+lr_patience: 20
+batch_size: 128
+shuffle: True
+train_patience: 40
+normalize_loss: False
+
+# testing params
+m: 1
+n_saved_samples: 10
+
+# data params
+data_name: cluttered
+data_dir: /s/chopin/l/grad/stock/nvme/data/cs/cluttered-mnist
+ckpt_dir: ../ckpt
+plot_dir: ../plots
+standardize_x: False
+n_outputs: 10
+c: 1
+
+# misc params
+best: True
+resume: False
+seed: 1234
+cuda: True

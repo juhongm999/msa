@@ -1,0 +1,45 @@
+model_name: e01
+
+# network params
+g: 8
+k: 1
+s: 1
+h_g: 128
+h_l: 128
+n_hiddens: 256
+loc_std: 0.05
+
+# memory params
+use_memory: False
+n_heads: 1
+dim_feedforward: 256
+dropout: 0.1
+
+# training params
+epochs: 150
+n_glimpses: 6
+lr: 0.0003 
+lr_patience: 20
+batch_size: 128
+shuffle: True
+train_patience: 40
+normalize_loss: False
+
+# testing params
+m: 1
+n_saved_samples: 10
+
+# data params
+data_name: mnist
+data_dir: /s/chopin/l/grad/stock/nvme/data/cs/
+ckpt_dir: ../ckpt
+plot_dir: ../plots
+standardize_x: False
+n_outputs: 10
+c: 1
+
+# misc params
+best: True
+resume: False
+seed: 1234
+cuda: True

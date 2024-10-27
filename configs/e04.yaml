@@ -1,0 +1,44 @@
+# model params
+model_name: e04
+g: 12
+k: 3
+s: 2
+h_g: 512
+h_l: 64
+n_hiddens: 256
+loc_std: 0.1
+n_heads: 4
+dim_feedforward: 256
+
+# memory params
+use_memory: True
+
+# training params
+dropout: 0.1
+epochs: 400
+n_glimpses: 6
+lr: 0.0003
+lr_patience: 20
+batch_size: 128
+train_patience: 40
+shuffle: True
+normalize_loss: False
+
+# testing params
+m: 1
+n_saved_samples: 0
+
+# data params
+data_name: cifar
+data_dir: /s/chopin/l/grad/stock/nvme/data/cs/cifar-10-batches-py
+ckpt_dir: ../ckpt
+plot_dir: None
+standardize_x: False
+n_outputs: 10
+c: 3
+
+# misc params
+best: True
+resume: False
+seed: 1234
+cuda: True
